@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "dev:remote": "cross-env REACT_APP_DEV_REMOTE=remote npm start",
+    "dev:remote": "export NODE_OPTIONS=--openssl-legacy-provider && cross-env REACT_APP_DEV_REMOTE=remote npm start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
